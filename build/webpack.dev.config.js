@@ -61,8 +61,6 @@ module.exports = merge(webpackBaseConfig, {
       '/apiweb': {
         // 目标服务器地址
         target: 'http://127.0.0.1:13000/',
-        // target: 'http://192.168.66.246:13000/',
-        // target: 'http://jzkf.xierxinxi.com:11000',
         secure: false,
         //路径重写
         pathRewrite: {
@@ -72,8 +70,6 @@ module.exports = merge(webpackBaseConfig, {
       },
       '/apiwss': {
         // 目标服务器地址
-        // target: 'http://127.0.0.1:14000/',
-        // target: 'http://192.168.66.246:14000/',
         target: 'http://jzkf.xierxinxi.com:11000',
         secure: false,
         //路径重写
@@ -84,8 +80,7 @@ module.exports = merge(webpackBaseConfig, {
       },
       '/apirecord': {
         // 目标服务器地址
-        // target: 'http://127.0.0.1:14000/',
-        target: 'http://192.168.66.251:11000/',
+        target: 'http://127.0.0.1:14000/',
         secure: false,
         //路径重写
         pathRewrite: {
@@ -95,8 +90,7 @@ module.exports = merge(webpackBaseConfig, {
       },
       '/apiupload': {
         // 目标服务器地址
-        // target: 'http://127.0.0.1:14000/',
-        target: 'http://192.168.66.246:14000',
+        target: 'http://127.0.0.1:14000/',
         secure: false,
         //路径重写
         pathRewrite: {},
