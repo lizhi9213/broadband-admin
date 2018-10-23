@@ -1,0 +1,173 @@
+.container {
+  .ivu-card {
+    .ivu-card-body {
+      .customer {
+        list-style: none;
+        .cust-title {
+          margin-bottom: 30px;
+          border-bottom: 1px solid rgba(24, 144, 255, 0.8);
+          position: relative;
+          .label {
+            display: inline-block;
+            padding: 4px 24px;
+            padding-right: 33px;
+            background-color: rgba(24, 144, 255, 0.8);
+            color: #fff;
+            border-radius: 12px 57px 0px 0;
+          }
+        }
+        .cust-item {
+          padding-left: 20px;
+          margin-bottom: 18px;
+          &.error {
+            color: #ed3f14;
+          }
+        }
+      }
+      .title {
+        // margin-top: 10px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid rgba(24, 144, 255, 0.8);
+        position: relative;
+        .label {
+          font-size: 17px;
+          font-weight: normal;
+          display: inline-block;
+          padding: 4px 24px;
+          padding-right: 33px;
+          background-color: rgba(24, 144, 255, 0.8);
+          color: #fff;
+          border-radius: 12px 57px 0px 0;
+        }
+      }
+      .order-form {
+        padding-bottom: 10px;
+        .list-item {
+          padding-right: 3%;
+          .item-group {
+            width: 100%;
+            // margin-bottom: 24px;
+            vertical-align: top;
+            zoom: 1;
+            &::before {
+              content: '';
+              display: table;
+            }
+            &::after {
+              clear: both;
+              visibility: hidden;
+              font-size: 0;
+              height: 0;
+              content: '';
+              display: table;
+            }
+            .group-label {
+              width: 120px;
+              text-align: right;
+              vertical-align: middle;
+              float: left;
+              font-size: 12px;
+              color: #515a6e;
+              line-height: 1;
+              padding: 10px 12px 10px 0;
+              box-sizing: border-box;
+              &::before {
+                content: '*';
+                display: inline-block;
+                margin-right: 4px;
+                line-height: 1;
+                font-family: SimSun;
+                font-size: 12px;
+                color: #ed3f14;
+              }
+            }
+            .group-content {
+              position: relative;
+              line-height: 32px;
+              font-size: 12px;
+              margin-left: 120px;
+              display: flex;
+              .ivu-form-item {
+                flex: 1;
+                box-sizing: border-box;
+                .ivu-form-item-content {
+                  margin-left: 0 !important;
+                }
+                &:nth-of-type(1) {
+                  .ivu-form-item-content {
+                    padding-right: 5px;
+                  }
+                }
+                &:nth-of-type(2) {
+                  .ivu-form-item-content {
+                    padding: 0px 5px;
+                  }
+                }
+                &:nth-of-type(3) {
+                  .ivu-form-item-content {
+                    padding-left: 5px;
+                  }
+                }
+              }
+            }
+          }
+          > .ivu-form-item {
+            .ivu-form-item-content {
+              display: flex;
+            }
+          }
+        }
+        .submit-form-btn {
+          padding: 10px 56px;
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+.cust-list {
+  list-style: none;
+  height: 580px;
+  overflow: hidden;
+  overflow-y: auto;
+  .list-item {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #c0ccda;
+    padding: 20px 0px 20px 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 16px;
+    .item-label {
+      content: '';
+      position: absolute;
+      width: 72px;
+      height: 42px;
+      right: -27px;
+      top: -11px;
+      transform: rotate(45deg);
+      background-color: #c0ccda;
+      box-shadow: 0 1px 1px #ccc;
+      > i {
+        transform: rotate(-38deg);
+        color: #fff;
+        position: relative;
+        top: 20px;
+        right: -30px;
+      }
+    }
+    .cust-item {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+    &.checked {
+      border: 1px solid rgba(24, 144, 255, 0.8);
+      .item-label {
+        background-color: rgba(24, 144, 255, 0.8);
+      }
+    }
+  }
+}

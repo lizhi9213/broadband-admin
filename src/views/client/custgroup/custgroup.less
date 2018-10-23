@@ -1,0 +1,85 @@
+.group {
+    .hadle-box {
+        overflow: hidden;
+        margin-bottom: 20px;
+        .search-box {
+            float: left;
+        }
+        .btn-box {
+            float: right;
+        }
+    }
+}
+
+.ivu-modal-content {
+    height: 100%;
+    border-radius: 0;
+    .ivu-modal-body {
+        height: calc(~'100% - 100px');
+        .ivu-radio-group {
+            width: 100%;
+        }
+    }
+}
+
+.group-form {
+    .formeitem-users {
+        .ivu-form-item-content {
+            padding: 18px 14px;
+            border: 1px solid #ccc;
+            .user-list-box {
+                margin-top: 18px;
+                border-radius: 4px;
+                height: 380px;
+                .iview-admin-draggable-list {
+                    height: 100%;
+                }
+                .iview-admin-draggable-list li {
+                    padding: 9px;
+                    border: 1px solid #e7ebee;
+                    border-radius: 3px;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                    position: relative;
+                    transition: all .2s;
+                }
+                .iview-admin-draggable-list li:hover {
+                    color: #87b4ee;
+                    border-color: #87b4ee;
+                    transition: all .2s;
+                }
+                .iview-admin-draggable-delete {
+                    height: 100%;
+                    position: absolute;
+                    right: -8px;
+                    top: 0px;
+                    display: none;
+                }
+                .iview-admin-draggable-list li:hover .iview-admin-draggable-delete {
+                    display: block;
+                }
+                .placeholder-style {
+                    display: block !important;
+                    color: transparent;
+                    border-style: dashed !important;
+                }
+                .delte-item-animation {
+                    opacity: 0;
+                    transition: all .2s;
+                }
+                .iview-admin-draggable-list {
+                    overflow: auto
+                }
+                .handle_bth {
+                    float: right;
+                    margin-top: 4px;
+                    &:hover {
+                        color: #f90;
+                        background-color: transparent;
+                        border-color: #f90;
+                    }
+                }
+            }
+        }
+    }
+}

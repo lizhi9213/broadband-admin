@@ -1,0 +1,139 @@
+.hadle-box {
+  margin-top: 16px;
+  padding-right: 10px;
+  text-align: right;
+  overflow: hidden;
+  > button {
+  }
+  .title {
+    float: left;
+    text-indent: 10px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+.body-card {
+  margin-top: 20px;
+  min-height: 600px;
+  .role_flex {
+    position: relative;
+    padding-left: 286px;
+    .left-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 260px;
+      height: 580px;
+      overflow: hidden;
+      overflow-y: auto;
+      .user-list {
+        border-bottom: 1px solid #e6e6e6;
+        .el-icon-delete {
+          float: right;
+          padding: 4px;
+          display: none;
+        }
+        &:hover {
+          > i:nth-of-type(2) {
+            display: block;
+          }
+        }
+      }
+    }
+    .power {
+      .collapse {
+        border: none;
+        .el-collapse-item {
+          margin-bottom: 30px;
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          border: 1px solid #ebeef5;
+          transition: 0.3s;
+          transition-property: initial;
+          transition-duration: 0.3s;
+          transition-timing-function: initial;
+          transition-delay: initial;
+          border-radius: 4px;
+          overflow: hidden;
+          [role='tab'] {
+            border: none;
+            background-color: #f5f5f5;
+            padding-left: 14px;
+            border-bottom: 1px solid #ebeef5;
+            .el-collapse-item__header {
+              border: none;
+              background: transparent;
+            }
+          }
+          [role='tabpanel'] {
+            border: none;
+            padding: 0 16px;
+            .power-list {
+              margin: 20px 0;
+            }
+          }
+        }
+      }
+      .hadle-group {
+        text-align: right;
+        overflow: hidden;
+        margin-bottom: 20px;
+        .input-with-search {
+          display: flex;
+          float: left;
+          width: 280px;
+        }
+        > button {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
+
+.select-user-box {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  overflow-y: auto;
+  .user-item {
+    margin-top: 10px;
+    margin-right: 30px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    .user-photo {
+      width: 70px;
+      height: 70px;
+    }
+    > p {
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-top: 7px;
+    }
+    .ivu-badge-dot {
+      display: none;
+      background: #5cb85c !important;
+      position: absolute;
+      transform: translateX(-50%);
+      transform-origin: 0 center;
+      top: -6px;
+      right: -14px;
+      height: 14px;
+      width: 14px;
+      border-radius: 100%;
+      z-index: 10;
+      box-shadow: 0 0 0 1px #fff;
+    }
+    &.checked {
+      > p {
+        color: #5cb85c;
+      }
+      .ivu-badge-dot {
+        display: block;
+      }
+    }
+  }
+}

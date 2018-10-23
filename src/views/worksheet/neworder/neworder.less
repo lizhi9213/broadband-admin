@@ -1,0 +1,78 @@
+.reply_box {
+  position: relative;
+  .reply_class {
+    width: 100%;
+    position: absolute;
+    text-indent: 20px;
+    bottom: 44px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    > p {
+      cursor: pointer;
+      border-bottom: 1px solid #ccc;
+      line-height: 38px;
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+    > p:nth-last-of-type(1) {
+      border-bottom: none;
+    }
+  }
+}
+
+.desc_item_box {
+  .ivu-form-item-content {
+    padding-top: 34px;
+    .desc_hadle_box {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: #eef2f9;
+      border: 1px solid #d7dde4;
+      border-radius: 4px;
+      .unpload_bth {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        &:active {
+          outline: none;
+          color: #657180;
+        }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+        &:hover {
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: #657180;
+        }
+      }
+    }
+    .desc_textarea {
+      .ivu-input {
+        border-top: none;
+        &:focus {
+          border-color: #d7dde4;
+          outline: none;
+          box-shadow: none;
+        }
+        &:hover {
+          border-color: #d7dde4;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c87;
+}

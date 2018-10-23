@@ -1,0 +1,58 @@
+.label-box {
+    .hadle-box {
+        margin-bottom: 20px;
+        text-align: left;
+        overflow: hidden;
+        .input-with-select {
+            width: 300px;
+            .el-input-group__append {
+                border: none;
+                background-color: #33d685;
+                color: #fff;
+            }
+        }
+    }
+    .label-list {
+        display: flex;
+        .label-item {
+            display: inline-block;
+            border-radius: 4px 0 0 4px;
+            position: relative;
+            margin-right: 48px;
+            .label_msg{
+                display: inline-block;
+                padding: 11px 18px 10px 16px;
+            }
+            .triangle {
+                position: absolute;
+                background-color: transparent;
+                top: 0;
+                right: -26px;
+                width: 0;
+                height: 0;
+                border-top: 22px solid transparent;
+                border-left-width: 26px;
+                border-left-style: solid;
+                border-bottom: 20px solid transparent;
+                z-index: 6;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #fff;
+                top: 50%;
+                right: -12px;
+                transform: translateY(-50%);
+                z-index: 8;
+            }
+            // .ivu-icon {
+            //     margin-right: 16px;
+            //     padding: 4px;
+            //     cursor: pointer;
+            // }
+        }
+    }
+}

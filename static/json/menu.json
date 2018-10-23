@@ -1,0 +1,142 @@
+[ {
+    "path": "/enterprise",
+    "icon": "android-apps",
+    "name": "enterprise",
+    "title": "企业中心",
+    "component": "@/views/Main.vue",
+    "children": [
+        {
+            "path": "information",
+            "icon": "trophy",
+            "name": "information",
+            "title": "企业信息",
+            "component": "./views/enterprise/information/information.vue"
+        }, {
+            "path": "role",
+            "icon": "person",
+            "name": "role",
+            "title": "角色管理",
+            "component": "@/views/enterprise/role/role.vue"
+        }, {
+            "path": "organization",
+            "icon": "android-people",
+            "name": "organization",
+            "title": "组织+用户设置",
+            "component": "@/views/enterprise/organization/organization.vue"
+        }
+    ]
+},
+{
+    "path": "/myself",
+    "icon": "paper-airplane",
+    "title": "个人中心",
+    "name": "myself",
+    "component": "@/views/Main.vue",
+    "children": [
+        { "path": "index", "title": "个人中心", "name": "myself_index", "component": "@/views/myself/myself.vue" }
+    ]
+},
+{
+    "path": "/customer",
+    "icon": "gear-b",
+    "name": "customer",
+    "title": "客户设置",
+    "component": "@/views/Main.vue",
+    "children": [
+        {
+            "path": "field",
+            "icon": "android-create",
+            "name": "field",
+            "title": "客户字段",
+            "component": "@/views/customer/field/field.vue"
+        },
+        {
+            "path": "cview",
+            "icon": "android-laptop",
+            "name": "cview",
+            "title": "客户视图",
+            "component": "@/views/customer/cview/cview.vue"
+        },
+        {
+            "path": "lable",
+            "icon": "ios-pricetags",
+            "name": "lable",
+            "title": "客户标签",
+            "component": "@/views/customer/lable/lable.vue"
+        }
+    ]
+},
+{
+    "path": "/voice",
+    "icon": "volume-high",
+    "name": "voice",
+    "title": "语音管理",
+    "component": "@/views/Main.vue",
+    "children": [
+        {
+            "path": "calling",
+            "icon": "android-volume-up",
+            "name": "calling",
+            "title": "主叫管理",
+            "component": "@/views/voice/calling/calling.vue"
+        },
+        {
+            "path": "relay",
+            "icon": "android-sync",
+            "name": "relay",
+            "title": "中继管理",
+            "component": "@/views/voice/relay/relay.vue"
+        },
+        {
+            "path": "extension",
+            "icon": "merge",
+            "name": "extension",
+            "title": "分机管理",
+            "component": "@/views/voice/extension/extension.vue"
+        },
+        {
+            "path": "ivr",
+            "icon": "ipod",
+            "name": "ivr",
+            "title": "IVR设置",
+            "component": "@/views/voice/ivr/ivr.vue"
+        }
+    ]
+},
+{
+    "path": "/proadmin",
+    "icon": "folder",
+    "name": "proadmin",
+    "title": "项目管理",
+    "component": "@/views/Main.vue",
+    "children": [
+        {
+            "path": "term",
+            "icon": "android-checkbox-outline",
+            "name": "term",
+            "title": "话术问卷",
+            "component": "@/views/proadmin/term/term.vue"
+        },
+        {
+            "path": "proset",
+            "icon": "android-clipboard",
+            "name": "proset",
+            "title": "项目设置",
+            "component": "@/views/proadmin/proset/proset.vue"
+        },
+        {
+            "path": "proreso",
+            "icon": "social-buffer",
+            "name": "proreso",
+            "title": "资料管理",
+            "component": "@/views/proadmin/proreso/proreso.vue"
+        },
+        {
+            "path": "promoni",
+            "icon": "ios-speedometer-outline",
+            "name": "promoni",
+            "title": "坐席监控",
+            "component": "@/views/proadmin/promoni/promoni.vue"
+        }
+    ]
+}]

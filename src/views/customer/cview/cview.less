@@ -1,0 +1,104 @@
+.tips {
+    line-height: 30px;
+    margin-bottom: 26px;
+}
+
+.view-box {
+    .drgga-box {
+        .iview-admin-draggable-list {
+            height: 100%;
+        }
+        .iview-admin-draggable-list li {
+            padding: 9px;
+            border: 1px solid #e7ebee;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            position: relative;
+            transition: all .2s;
+        }
+        .iview-admin-draggable-list li:hover {
+            color: #87b4ee;
+            border-color: #87b4ee;
+            transition: all .2s;
+        }
+        .iview-admin-draggable-delete {
+            height: 100%;
+            position: absolute;
+            right: -8px;
+            top: 0px;
+            display: none;
+        }
+        .iview-admin-draggable-list li:hover .iview-admin-draggable-delete {
+            display: block;
+        }
+        .placeholder-style {
+            display: block !important;
+            color: transparent;
+            border-style: dashed !important;
+        }
+        .delte-item-animation {
+            opacity: 0;
+            transition: all .2s;
+        }
+        .iview-admin-draggable-list {
+            overflow: auto
+        }
+        /*自定义样式*/
+        .iview-admin-draggable-list.left-list li {
+            width: 48%;
+            float: left;
+            margin-right: 1%;
+        }
+        .iview-admin-draggable-list.left-list .item-title {
+            display: inline;
+            border: none;
+        }
+        .iview-admin-draggable-list.left-list .item-input {
+            display: none;
+        }
+        .iview-admin-draggable-list.left-list .company {
+            display: none;
+        }
+        .iview-admin-draggable-list.right-list li {
+            border: none;
+            cursor: auto;
+            padding: 0;
+            display: flex;
+        }
+        .iview-admin-draggable-list.right-list li:hover {
+            border: none;
+            color: #657180;
+            .item-title {
+                color: #87b4ee; // border-color: #87b4ee;
+                background: #fff;
+            }
+        }
+        .iview-admin-draggable-list.right-list .item-title {
+            display: inline-block;
+            height: 100%;
+            width: 30%;
+            padding: 9px;
+            margin-right: 10px;
+            border: 1px solid #e7ebee;
+            border-radius: 3px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            background: #f8f8f8;
+        }
+        .iview-admin-draggable-list.right-list .item-input {
+            border: 1px solid #e7ebee;
+            border-radius: 3px;
+            padding: 9px;
+            outline: none;
+        }
+        .iview-admin-draggable-list.right-list .item-input:focus {
+            border-color: #87b4ee;
+        }
+        .iview-admin-draggable-list.right-list .company {
+            line-height: 41px;
+            margin-left: 20px;
+        }
+    }
+}

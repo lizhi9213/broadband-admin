@@ -1,0 +1,93 @@
+.container {
+  .ivu-card {
+    .ivu-card-body {
+      width: 100%;
+      height: 100%;
+      .seat-box {
+        .statistical {
+          display: flex;
+          padding-bottom: 16px;
+          .items {
+            display: flex;
+            align-items: center;
+            margin-right: 14px;
+            .color-bolck {
+              display: inline-block;
+              margin-left: 8px;
+              width: 48px;
+              height: 24px;
+              border-radius: 6px;
+              text-align: center;
+              box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+              &.color1 {
+                background-color: #f2f2f2;
+              }
+              &.color2 {
+                background-color: #0cbc83;
+              }
+              
+              &.color3 {
+                background-color: #cccc66;
+              }
+            }
+          }
+        }
+        .seat-card {
+          min-height: 116px;
+          margin-bottom: 16px;
+          border-radius: 12px;
+          padding: 10px 0;
+          display: flex;
+          cursor: pointer;
+          color: #333;
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          .user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 7px;
+            width: 82px;
+            font-size: 12px;
+            .iconfont {
+              font-size: 32px;
+              color: #1296db;
+              margin: 10px 0 3px 0;
+            }
+          }
+          .status {
+            font-size: 13px;
+            padding-top: 10px;
+            p {
+              margin-bottom: 6px;
+            }
+          }
+          &.bg-color1 {
+            background-color: #f2f2f2;
+          }
+          &.bg-color2 {
+            background-color: #0cbc83;
+          }
+          &.bg-color3 {
+            background-color: #cccc66;
+          }
+        }
+      }
+      .chart-box {
+        width: 100%;
+        display: flex;
+        > div {
+          height: 100%;
+          height: 420px;
+        }
+        #line_chart {
+          flex: 2;
+          padding-right: 16px;
+        }
+        #bar_chart {
+          height: 420px;
+          flex: 1;
+        }
+      }
+    }
+  }
+}

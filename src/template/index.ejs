@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[0] %>">
+    <link rel="stylesheet" name="theme" href="">
+    <link rel="icon" href="./dist/td_icon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="app"></div>
+    <div class="lock-screen-back" id="lock_screen_back"></div>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[0] %>"></script>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[1] %>"></script>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[2] %>"></script>
+    <!-- <script src="/static/sipml5/SIPml-api.js" type="text/javascript"></script>
+    <script src="/static/sipml5/skaysip.js" type="text/javascript"></script> -->
+
+    <!-- Audios -->
+    <!-- <audio id="audio_remote" autoplay="autoplay"> </audio>
+    <audio id="ringtone" loop src="/static/sipml5/sounds/ringtone.wav"> </audio>
+    <audio id="ringbacktone" loop src="/static/sipml5/sounds/ringbacktone.wav"> </audio>
+    <audio id="dtmfTone" src="/static/sipml5/sounds/dtmf.wav"> </audio> -->
+</body>
+
+</html>
