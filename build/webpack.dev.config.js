@@ -70,7 +70,7 @@ module.exports = merge(webpackBaseConfig, {
       },
       '/apiwss': {
         // 目标服务器地址
-        target: 'http://jzkf.xierxinxi.com:11000',
+        target: 'http://127.0.0.1:13000/',
         secure: false,
         //路径重写
         pathRewrite: {
