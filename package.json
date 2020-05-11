@@ -38,7 +38,7 @@
     "simplemde": "^1.11.2",
     "socket.io": "^2.1.1",
     "sortablejs": "^1.7.0",
-    "tinymce": "^4.7.4",
+    "tinymce": "^4.9.10",
     "vue": "^2.5.13",
     "vue-aplayer": "^1.6.1",
     "vue-axios": "^2.1.1",
